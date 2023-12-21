@@ -10,7 +10,7 @@ export const useLogin = () => {
         setError(null)
         setLoading(true)
 
-        const response = await fetch('/api/user/login/', { 
+        const response = await fetch('https://mer-nstack-opv-server.vercel.app/api/user/login/', { 
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})
