@@ -55,6 +55,7 @@ const workoutForm = () => {
         <label>Exercise Title :</label>
         <input type='text'
         onChange={(e) => setTitle(e.target.value)}
+        maxLength={20}
         value={title}
         className={emptyFields.includes('title') ? 'error':''}>
         </input>
